@@ -1,23 +1,27 @@
 Package: papayaWidget
 Title: Embed an 'Papaya' Image Viewer
 Version: 0.7.1
-Authors@R: c(person("John", "Muschelli", 
-    email = "muschellij2@gmail.com", role = c("aut", "cre")), 
-    person("Adi", "Gherman", email="adig@jhu.edu", role = c("aut")))
-Description: Provides a method for incorporating a 'papaya' in a document using
-    the 'htmlwidgets' library, wrapping the 'Papaya' JavaScript library
-    <http://ric.uthscsa.edu/mango/papaya.html> with some modifications.
+Authors@R: c(person("John", "Muschelli", email =
+        "muschellij2@gmail.com", role = c("aut", "cre")), person("Adi",
+        "Gherman", email="adig@jhu.edu", role = c("aut")))
+Description: Provides a method for incorporating a 'papaya' in a
+        document using the 'htmlwidgets' library, wrapping the 'Papaya'
+        JavaScript library <http://ric.uthscsa.edu/mango/papaya.html>
+        with some modifications.
 Depends: R (>= 3.0)
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
-Imports: 
-    htmlwidgets,
-    neurobase (>= 1.27),
-    base64enc,
-    jsonlite,
-    assertthat
-Suggests:
+Imports: htmlwidgets, neurobase (>= 1.27), base64enc, jsonlite,
+        assertthat
+Suggests: 
     kirby21.t1,
-    shiny
+    shiny,
+    covr,
+    testthat
 RoxygenNote: 7.0.2
+Repository: Neuroconductor
+Remotes: 
+    neuroconductor/kirby21.t1@d9d2c5888aae676ae04f31146111014c589ea26f,
+    neuroconductor/neurobase@1d4b172915192d419b4defb2e56d84d7541c03cd
+biocViews: 
